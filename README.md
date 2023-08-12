@@ -56,7 +56,7 @@ Vertauschen von Plus und Minus führt zum unmittelbaren Tod des Controllers.
 * Plus- und Minuskabel (ca. 5 cm lang) für die Stromversorgung des Controllers vorbereiten (verzinnen)
 * Kabel der abgeschnittenen Buchse vorbereiten (verzinnen)
 * Die beiden Stromkabel an den Controller (an 5V und G) löten
-* Das grüne Kabel aus der Buchse (Daten) an D4 löten
+* Das grüne Kabel aus der Buchse (Daten) an D4 löten (D4 = GPIO2, der Default bei WLED)
 
 [![](docs/05-preview.jpg)](docs/05.jpg)
 
@@ -126,16 +126,19 @@ Nun entstehen scharf umrissene Pixel:
 * Trennt die LEDs mit dem Stecker vom Controller
 * Entfernt das Netzteil
 
-
 Die LEDs sind über den WS2811 individuell adressierbar.
 Wer Muße hat, kann mit Hilfe von Bibliotheken wie z.B. [FastLED](https://fastled.io/) seine eigene Steuerung schreiben.
 
 Wer schnell Ergebnisse sehen will, flasht den Controller mit [WLED](https://kno.wled.ge/basics/install-binary/).
 Dies kann sehr einfach mit dem [WLED Web Installer](https://install.wled.me/) geschehen.
+Eine deutsche Doku gibt es (hier)[https://github.com/Aircoookie/WLED-wiki-DE/wiki].
 
 Nach dem ersten Einschalten meldet sich der Controller als WLAN-Access-Point.
 Hier kann man nun das WLAN, mit dem sich der Controller verbinden soll, einstellen.
 Ist das konfigurierte WLAN nicht (mehr) erreichbar, geht WLED automatisch wieder in den Access-Point-Modus.
+
+Wenn alles schiefläuft: GPIO0 für 8 Sekunden gegen Ground kurzschließen.
+Das zwingt WLED in den Access-Point-Modus.
 
 Nach dem Start muss der angelötete LED-Streifen konfiguriert werden:
 
@@ -147,6 +150,7 @@ Nach dem Start muss der angelötete LED-Streifen konfiguriert werden:
 * Config - 2D Configuration
   * Strip or panel: 2D Matrix
   * Panel dimensions: 7 x 7
+  * Serpentine aktivieren
 
 Etwas unintuitiv ist, dass WLED nach einem Neustart das zuletzt gewählte Muster vergessen hat.
 Möchte man ein Muster als "Default beim Einschalten", so kann man dies folgendermaßen erreichen:

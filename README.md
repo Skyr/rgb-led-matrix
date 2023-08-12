@@ -159,3 +159,14 @@ Möchte man ein Muster als "Default beim Einschalten", so kann man dies folgende
 * Preset anlegen (+ Preset). Preset-Nummer merken
 * Config - LED Preferences: Defaults - Apply preset: Hier die Nummer einstellen
 
+
+## Lizenz
+
+[![CC by-nc-sa](docs/by-nc-sa.eu.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+(CC) by-nc-sa Stefan Schlott
+
+Projekt verfügbar unter: https://github.com/Skyr/rgb-led-matrix
+
+![](docs/project-qrcode.png)
+

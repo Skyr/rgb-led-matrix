@@ -131,7 +131,7 @@ Wer Muße hat, kann mit Hilfe von Bibliotheken wie z.B. [FastLED](https://fastle
 
 Wer schnell Ergebnisse sehen will, flasht den Controller mit [WLED](https://kno.wled.ge/basics/install-binary/).
 Dies kann sehr einfach mit dem [WLED Web Installer](https://install.wled.me/) geschehen.
-Eine deutsche Doku gibt es (hier)[https://github.com/Aircoookie/WLED-wiki-DE/wiki].
+Eine deutsche Doku gibt es [hier](https://github.com/Aircoookie/WLED-wiki-DE/wiki).
 
 Nach dem ersten Einschalten meldet sich der Controller als WLAN-Access-Point.
 Hier kann man nun das WLAN, mit dem sich der Controller verbinden soll, einstellen.

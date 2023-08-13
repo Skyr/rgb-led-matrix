@@ -4,6 +4,10 @@ Für mehr RGB-Blingbling im (Kinder)zimmer!
 
 Ein kindergeeignetes Bastelprojekt mit einer minimalen Menge an Lötarbeit.
 
+[![Fertiger Rahmen](docs/14-preview.jpg)](docs/video.webm)
+
+(Bild und Video werden der Realität nur bedingt gerecht, die Kamera neigt immer zur Überbelichtung)
+
 
 ## Material
 

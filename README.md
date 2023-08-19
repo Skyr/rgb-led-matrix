@@ -136,12 +136,13 @@ Wer Muße hat, kann mit Hilfe von Bibliotheken wie z.B. [FastLED](https://fastle
 Wer schnell Ergebnisse sehen will, flasht den Controller mit [WLED](https://kno.wled.ge/basics/install-binary/).
 Dies kann sehr einfach mit dem [WLED Web Installer](https://install.wled.me/) geschehen.
 Eine deutsche Doku gibt es [hier](https://github.com/Aircoookie/WLED-wiki-DE/wiki).
+Die 0.13er-Versionen unterstützen noch keine 2D-Displays, es ist eine Version 0.14 (ggs Beta-Version nutzen) oder höher nötig.
 
-Nach dem ersten Einschalten meldet sich der Controller als WLAN-Access-Point.
+Nach dem ersten Einschalten meldet sich der Controller als WLAN-Access-Point "WLED-AP" (das Default-Passwort lautet "wled1234").
 Hier kann man nun das WLAN, mit dem sich der Controller verbinden soll, einstellen.
 Ist das konfigurierte WLAN nicht (mehr) erreichbar, geht WLED automatisch wieder in den Access-Point-Modus.
 
-Wenn alles schiefläuft: GPIO0 für 8 Sekunden gegen Ground kurzschließen.
+Wenn alles schiefläuft: D3 (das ist GPIO0) für 8 Sekunden gegen Ground kurzschließen.
 Das zwingt WLED in den Access-Point-Modus.
 
 Nach dem Start muss der angelötete LED-Streifen konfiguriert werden:
@@ -150,11 +151,13 @@ Nach dem Start muss der angelötete LED-Streifen konfiguriert werden:
   * Enable automatic brightness limiter - an
   * Maximum Current - 2500 mA
   * LED voltage: 5 V
-  * LED outputs: WS281x, Color Order GRB, Length 49
+  * LED outputs: WS281x, Color Order RGB, Length 49
 * Config - 2D Configuration
   * Strip or panel: 2D Matrix
   * Panel dimensions: 7 x 7
   * Serpentine aktivieren
+  * Je nachdem, wie ihr das Display aufstellen/aufhängen wollt, befindet sich die Buchse (und damit die erste LED) an anderer Stelle.
+    Diese müsst ihr entsprechend in der Konfiguration einstellen (oben/unten, links/rechts).
 
 Etwas unintuitiv ist, dass WLED nach einem Neustart das zuletzt gewählte Muster vergessen hat.
 Möchte man ein Muster als "Default beim Einschalten", so kann man dies folgendermaßen erreichen:

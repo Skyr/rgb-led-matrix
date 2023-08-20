@@ -48,7 +48,7 @@ Wenn man die LEDs bis zur richtigen Tiefe durchsteckt, kann man sie durch Drehen
 [![](docs/03-preview.jpg)](docs/03.jpg)
 
 Die letzte überzählige LED wird abgeschnitten. Die Buchse wird auch abgeschnitten, die brauchen wir im nächsten Arbeitsschritt :-)
-
+Bitte ebenfalls abschneiden: Die beiden separaten blanken Kabel für eine zusätzliche Stromzufuhr - nicht, dass sie einen Kurzschluss verursachen.
 [![](docs/04-preview.jpg)](docs/04.jpg)
 
 
@@ -151,7 +151,7 @@ Nach dem Start muss der angelötete LED-Streifen konfiguriert werden:
   * Enable automatic brightness limiter - an
   * Maximum Current - 2500 mA
   * LED voltage: 5 V
-  * LED outputs: WS281x, Color Order RGB, Length 49
+  * LED outputs: WS281x, Color Order RGB (nach dem Flashen ist die Standardeinstellung ein gelbes Feld; falls das nicht passt: Andere Kombinationen testen), Length 49
 * Config - 2D Configuration
   * Strip or panel: 2D Matrix
   * Panel dimensions: 7 x 7
